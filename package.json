@@ -34,6 +34,7 @@
         "jquery": "3.4.1",
         "jquery.easing": "^1.4.1",
         "lodash": "^4.17.15",
+        "lodash.template": "^4.5.0",
         "magnific-popup": "^1.1.0"
     },
     "devDependencies": {
