@@ -1,12 +1,26 @@
+/* 
+Colours:
+Darkest
+#000000 (black)
+#0C0032 (blackish)
+#190061 (purple)
+#240090 (purple)
+#3500D3 (purple)
+#282828 (grey)
+Lightest
+*/
+
 body {
     margin: 0;
+    background-color: #000000;
+    color: white;
 }
 
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 
 .topnav {
-    background-color: #333;
+    background-color: #0C0032;
     overflow: hidden;
 }
 
@@ -15,7 +29,7 @@ body {
 
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,17 +40,18 @@ body {
 /* Change the color of links on hover */
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #3500D3;
+    color: white;
 }
 
 
 /* Add a color to the active/current link */
 
-.topnav a.active {
-    background-color: #4CAF50;
+
+/* .topnav a.active {
+    background-color: #3500D3;
     color: white;
-}
+} */
 
 
 /* Right-aligned section inside the top navigation */
