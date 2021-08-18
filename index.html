@@ -9,48 +9,73 @@
     <!--Make sure website functions on small devices as well as big ones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Tab image-->
-    <link rel="shortcut icon" type="image/png" href="img/octocat.png" />
     <!--Name of website - shown in the tab-->
     <title>Jord Gui</title>
+    <!--Tab image-->
+    <link rel="shortcut icon" type="image/png" href="img/octocat.png" />
 
-    <!-- Theme CSS -->
-    <link href="style.css" rel="stylesheet">
+    <!--Normalize is a CSS file that helps even out all the differences between  different browsers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--Used for social icon logos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <div class="topnav-right">
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+    <header>
+        <div class="logo">
+            <!--alt tag should be there but can be blank if not needed-->
+            <img src="img/jord-logo.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <!--Modify hamburger in CSS-->
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <!--BEM naming convention: double underscore means nav__list is a subcomponent of nav-->
+            <!--Helps later on whe modifying CSS to know what to change-->
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Career</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <!--Double hyphen means that it is a modifier class-->
+        <!--It will modify section__title to be different from the default one-->
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jord Gui</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">software developer</p>
+        <img src="img/jord-smile.svg" alt="a picture of Jord Gui smiling">
+    </section>
+
+    <!--About Me-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <div class="service">
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <div class="service">
+                <h3></h3>
+                <p></p>
             </div>
         </div>
-    </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Home</h2>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About</h2>
-    </section>
-
-    <!-- Project Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
+        <a href="#work" class="btn">My Work</a>
     </section>
 
 </body>
