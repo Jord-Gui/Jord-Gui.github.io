@@ -156,7 +156,8 @@ h3 {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: .5em;
+    background: var(--clr-dark);
 }
 
 .logo {
