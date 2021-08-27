@@ -161,7 +161,15 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    padding: .5em 0 0 .5em;
+}
+
+.logo a {
+    color: var(--clr-light);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav {
