@@ -418,7 +418,7 @@ header {
     display: grid;
     /* automatically creates columns based on screen size */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
