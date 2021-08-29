@@ -161,9 +161,10 @@ header {
 }
 
 .logo {
+    display: inline-block;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h3);
-    padding: .5em 0 0 .5em;
+    padding-left: 1em;
 }
 
 .logo a {
