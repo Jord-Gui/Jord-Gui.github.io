@@ -1,522 +1,177 @@
 <!DOCTYPE html>
+<!-- Let people know website is in english -->
 <html lang="en">
-
-<!--Data about data (metadata) is put in the head section-->
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!--Standard-->
+    <meta charset="UTF-8">
+    <!--Make sure website functions on small devices as well as big ones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Tab image-->
-    <link rel="shortcut icon" type="image/png" href="img/mylogo.png" />
     <!--Name of website - shown in the tab-->
     <title>Jord Gui</title>
+    <!--Tab image-->
+    <link rel="shortcut icon" type="image/png" href="img/jg-black-01.png" />
 
-    <!-- Custom fonts for this theme -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--Normalize is a CSS file that helps even out all the differences between  different browsers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--Used for social icon logos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body id="page-top">
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Jord Gui</a>
-            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <p>Jord Gui</p>
+            </a>
         </div>
-    </nav>
-
-    <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-
-            <!-- Masthead Avatar Image -->
-            <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
-
-            <!-- Masthead Heading -->
-            <h1 class="masthead-heading text-uppercase mb-0">Jord Gui</h1>
-
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <!-- Masthead Subheading -->
-            <p class="masthead-subheading font-weight-light mb-0">Computer Scientist - Software Developer</p>
-
-        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+                <!--Modify hamburger in CSS-->
+                <span class="hamburger"></span>
+            </button>
+        <nav class="nav">
+            <!--BEM naming convention: double underscore means nav__list is a subcomponent of nav-->
+            <!--Helps later on whe modifying CSS to know what to change-->
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <!--Double hyphen means that it is a modifier class-->
+        <!--It will modify section__title to be different from the default one-->
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jord Gui</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Computer Science</p>
+        <img src="img/jord-smile.svg" alt="a picture of Jord Gui smiling" class="intro__img">
+    </section>
 
-            <!-- Portfolio Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-
-            <!-- Icon Divider -->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
+    <!--My Sevices-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Computer Science</h3>
+                <p>I graduated university with a Bachelor of Computer Science, majoring in Advanced Computer Science.</p>
+                <p>I learned how to design algorithms and data structures in order to create software that solves real-world problems.</p>
+                <p>My final year involved a half-year placement in the Industry Based Learning (IBL) program, where I got the chance to work in a practical, corporate setting.</p>
             </div>
 
-            <!-- Portfolio Grid Items -->
-            <div class="row">
-
-                <!-- Portfolio Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/mac-logo.png" alt="mac-logo">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/ouat-logo.png" alt="ouat-logo">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="img/portfolio/tu-logo.png" alt="tu-logo">
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 4 -->
-                <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <div class="service">
+                <h3>Software Engineer</h3>
+                <p>In my spare time I like to work on coding projects. My main language is Python, but I have also worked with Java, Haskell, C++, HTML, CSS and JavaScript.</p>
+                <p>I am currently working on my front-end/web design skills, with the ultimate goal of becoming a Full Stack developer.</p>
+                <p>You can find examples of my projects below.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/note-by-note-logo.png" alt="note-by-note-logo">
-          </div>
-        </div> -->
 
-                <!-- Portfolio Item 5 -->
-                <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <div class="service">
+                <h3>DevOps Engineer</h3>
+                <p>I was first introduced to this line of work during my IBL placement, where I had the role of developing and maintaining the company's cloud platform.</p>
+                <p>My work involved creating automation pipelines and designing solutions using cloud computing. My tech stack involved AWS, Jenkins, Git, Ansible and Docker.</p>
+                <p>I recently obtained my first certification as an AWS Certified Cloud Practitioner, and am working on obtaining my first Microsoft Azure certification.</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-          </div>
-        </div> -->
+        </div>
 
-                <!-- Portfolio Item 6 -->
-                <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-          </div>
-        </div> -->
+        <a href="#work" class="btn">My Work</a>
+    </section>
 
-            </div>
-            <!-- /.row -->
+    <!--About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <!--Some people use headings as subtitle, but usually frowned upon-->
+        <!--Heading more used for sections and subsections-->
+        <p class="section__subtitle section__subtitle--about">Software Developer based in Melbourne</p>
 
+        <div class="about-me__body">
+            <p>
+                I am an Applicaton Development Analyst at Accenture. I enjoy exercising, reading books on my Kindle, drawing on my iPad and learning the guitar. Feel free to <a href="#footer">contact me</a> about anything and I'll get back to you as soon
+                as possible!
+            </p>
+        </div>
+
+        <img src="img/octocat.png" alt="maximschoemaker gif" class="about-me__img">
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <!--Portfolio item 01-->
+            <a href="projects/leetcode.html" target="blank" class="portfolio__item">
+                <!--alt tag should be there but can be blank if not needed-->
+                <img src="img/leetcode.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 02-->
+            <a href="projects/pushup.html" target="blank" class="portfolio__item">
+                <img src="img/pushup.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 03-->
+            <a href="projects/asteroids.html" target="blank" class="portfolio__item">
+                <img src="img/asteroids.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 04-->
+            <a href="https://devpost.com/software/note-by-note" target="blank" class="portfolio__item">
+                <img src="img/note-by-note.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 05-->
+            <a href="https://devpost.com/software/intersect-yovc56" target="blank" class="portfolio__item">
+                <img src="img/intersect.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 06-->
+            <a href="https://devpost.com/software/symphony-65i8u9" target="blank" class="portfolio__item">
+                <img src="img/symphony.png" alt="" class="portfolio__img">
+            </a>
+
+            <!--Portfolio item 07-->
+            <a href="projects/pdf-editor.html" target="blank" class="portfolio__item">
+                <img src="img/pdf-editor.png" alt="" class="portfolio__img">
+            </a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
-
-            <!-- About Section Heading -->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
-
-            <!-- Icon Divider -->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <!-- About Section Content -->
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">Welcome to my website! I am a Applicaton Development Analyst at Accenture wanting to get into Full Stack development. I am also completing my certifications for AWS, Azure and Google Cloud.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">I enjoy exercising in my free time, reading books on my Kindle and messing around with my PC. Feel free to contact me about anything and I'll get back to you as soon as possible.</p>
-                </div>
-            </div>
-
-            <!-- About Section Button -->
-            <!-- <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
-          <i class="fas fa-download mr-2"></i>
-          Free Download!
-        </a>
-      </div> -->
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-
-                <!-- Footer Location -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Location</h4>
-                    <p class="lead mb-0">Melbourne, Victoria
-                        <br>Australia</p>
-                </div>
-
-                <!-- Footer Social Icons -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <!-- <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-facebook-f"></i>
-          </a> -->
-                    <!-- <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a> -->
-                    <!-- <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a> -->
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jord-gui/" target="_blank">
-                        <i class="fab fa-fw fa-linkedin-in"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Jord-Gui" target="_blank">
-                        <i class="fab fa-fw fa-github"></i>
-                    </a>
-                </div>
-
-                <!-- Footer About Text -->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Contact Me</h4>
-                    <p class="lead mb-0">admin@jordgui.dev</p>
-                </div>
-
-            </div>
-        </div>
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <a href="mailto:admin@jordgui.dev" target="blank" class="footer__link">admin@jordgui.dev</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/Jord-Gui" target="blank" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/jord-gui/" target="blank" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
 
-    <!-- Copyright Section -->
-    <section class="copyright py-4 text-center text-white">
-        <div class="container">
-            <small>Copyright &copy; Jord Gui 2019-<script>document.write(new Date().getFullYear())</script></small>
-        </div>
-    </section>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Monash Association of Coding</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/mac-logo.png" alt="mac-logo">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">
-                                    In early 2019, a group of friends and I had the bright idea to start a new coding club at Monash University.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Once Upon A Time Dress Hire</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/ouat-logo.png" alt="ouat-logo">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">
-                                    Once Upon A Time Dress Hire is an online dress hiring business, who's pleasure I currently have of maintaining its website.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Transurban</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/tu-logo.png" alt="tu-logo">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">
-                                    My internship at Transurban is my first experience working in a corporate environment. I am currently learning about DevOps and working with AWS tools.
-                                </p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-        <div class="modal-dialog modal-xl" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-                <div class="modal-body text-center">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title -->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                <!-- Icon Divider -->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image -->
-                                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
-                                <!-- Portfolio Modal - Text -->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-                                    itaque. Nam.</p>
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <!-- JS -->
+    <script src="js/index.js"></script>
 
 </body>
 
