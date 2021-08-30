@@ -15,6 +15,6 @@ Design: https://xd.adobe.com/spec/6ebfeb86-6eeb-4b69-77dc-ecf4c4506bcc-188e/
 - Link notion as blog using Notion API
 
 ### Videos to check out/implement
-- https://youtu.be/Qhaz36TZG5Y
-- https://youtu.be/lPJVi797Uy0
-- https://youtu.be/Q7AOvWpIVHU
+- 10 CSS Pro Tips: https://youtu.be/Qhaz36TZG5Y
+- Build a Curvaceous Homepage: https://youtu.be/lPJVi797Uy0
+- 3D Three.js: https://youtu.be/Q7AOvWpIVHU
