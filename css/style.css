@@ -17,7 +17,7 @@
     /* colour */
     --clr-light: #fff;
     --clr-dark: #0C0032;
-    --clr-accent: #3500D3;
+    --clr-accent: #5AB9EA;
     /* font size */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -327,7 +327,7 @@ header {
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-light);
     position: relative;
 }
 
@@ -349,6 +349,10 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.service h3 {
+    color: var(--clr-accent);
 }
 
 @media (min-width: 800px) {
@@ -446,7 +450,7 @@ header {
 /* Footer */
 
 .footer {
-    color: var(--clr-accent);
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
