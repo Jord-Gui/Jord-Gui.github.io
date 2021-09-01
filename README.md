@@ -9,7 +9,7 @@ Design: https://xd.adobe.com/spec/6ebfeb86-6eeb-4b69-77dc-ecf4c4506bcc-188e/
 - Find a better colour palette (Alan)
 - Change typ esetting "like the layout of the type, you put a shift enter before those words so it changes the shape of the lines" (Grace)
 - Make portfolio images resize based on window size (Ethan)
-- Add toggle for dark mode
+- Add toggle for dark mode (https://coolors.co/000000-212121-303030-424242)
 - Check out Particle JS
 - Add pet section to document history of pets
 - Link notion as blog using Notion API
