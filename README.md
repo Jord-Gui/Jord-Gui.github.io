@@ -6,6 +6,7 @@ Tutorial: https://www.youtube.com/watch?v=_xkSvufmjEs
 Design: https://xd.adobe.com/spec/6ebfeb86-6eeb-4b69-77dc-ecf4c4506bcc-188e/
 
 ### To do 
+- Make portfolio items pop out like before instead of having separate page (easier to debug + make changes as no nav and footer)
 - Find a better colour palette (Alan)
 - Change type setting "like the layout of the type, you put a shift enter before those words so it changes the shape of the lines" (Grace)
 - Make portfolio images resize based on window size (Ethan)
