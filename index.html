@@ -116,24 +116,24 @@
 
         <div class="portfolio">
             <!--Portfolio item 01-->
-            <a href="projects/leetcode.html" class="portfolio__item">
+            <a href="#" class="portfolio__item">
                 <!--alt tag should be there but can be blank if not needed-->
-                <img src="img/leetcode.png" alt="" class="portfolio__img">
+                <img src="img/leetcode.png" alt="" href="#myModal1" class="portfolio__img modal-button">
             </a>
 
             <!--Portfolio item 02-->
-            <a href="projects/pushup.html" class="portfolio__item">
-                <img src="img/pushup.png" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__item">
+                <img src="img/pushup.png" alt="" href="#myModal2" class="portfolio__img modal-button">
             </a>
 
             <!--Portfolio item 03-->
-            <a href="projects/asteroids.html" class="portfolio__item">
-                <img src="img/asteroids.png" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__item">
+                <img src="img/asteroids.png" alt="" href="#myModal3" class="portfolio__img modal-button">
             </a>
 
             <!--Portfolio item 04-->
-            <a href="projects/pdf-editor.html" class="portfolio__item">
-                <img src="img/pdf-editor.png" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__item">
+                <img src="img/pdf-editor.png" alt="" href="#myModal4" class="portfolio__img modal-button">
             </a>
 
             <!--Portfolio item 05-->
@@ -169,6 +169,87 @@
             </li>
         </ul>
     </footer>
+
+    <!-- Individual Portfolio Items -->
+
+    <div class="modal" id="myModal1">
+        <div class="modal-content">
+
+            <section class="intro">
+                <h1 class="section__title section__title--intro">
+                    <strong>Leetcode</strong> Solutions
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Practice them algorithms and data structures</p>
+                <img src="../img/leetcode2.png" alt="" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <p>In this Git repository, you will find my solutions to Leetcode problems. Leetcode is a tool for software engineers to use in preparation for technical interviews. I work on these problems to implement and revise my knowledge on algorithms
+                    and data structures.</p>
+                <img src="../img/leetcode3.png" alt="">
+                <p>You can check out my solutions <a href="https://github.com/Jord-Gui/leetcode-solutions" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal2">
+        <div class="modal-content">
+
+            <section class="intro">
+                <h1 class="section__title section__title--intro">
+                    <strong>Push-Up</strong> Timer
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Get fit in iso</p>
+                <img src="../img/pushup2.jpg" alt="" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <p>I used this project to learn about JavaScript events and to motivate myself to work out during 2020's Coronavirus pandemic lockdown.</p>
+                <img src="../img/pushup3.png" alt="">
+                <p>You can check out the application <a href="https://jordgui.dev/push-up-timer/" target="_blank">here</a>. Source code <a href="https://github.com/Jord-Gui/push-up-timer" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal3">
+        <div class="modal-content">
+
+            <section class="intro">
+                <h1 class="section__title section__title--intro">
+                    <strong>Asteroids...</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">...using FRP</p>
+                <img src="../img/asteroids2.jpg" alt="" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <p>This game was created during an assignment in one of my units at university. The aim was to learn about Functional Reactive Programming using observables and was written in TypeScript.</p>
+                <img src="../img/asteroids3.png" alt="">
+                <p>You can check out the game <a href="https://jordgui.dev/Asteroids/" target="_blank">here</a>. Source code <a href="https://github.com/Jord-Gui/Asteroids" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal4">
+        <div class="modal-content">
+
+            <section class="intro">
+                <h1 class="section__title section__title--intro">
+                    <strong>PDF</strong> Editor
+                </h1>
+                <p class="section__subtitle section__subtitle--intro"></p>
+                <img src="../img/pdf-editor2.png" alt="" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <p>I created this project so that I could make simple edits to my PDF files without the hassle of using paid or dodgy online software. This was done by using the PyPDF library in Python and I referenced the book <a href="https://automatetheboringstuff.com/"
+                        target="_blank">Automate The Boring Stuff With Python</a>.</p>
+                <img src="../img/pdf-editor3.png" alt="">
+                <p>You can check it out <a href="https://github.com/Jord-Gui/PDF-Editor" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="js/index.js"></script>
