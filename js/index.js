@@ -16,14 +16,16 @@ const btn = document.querySelectorAll('.modal-button');
 for (var i = 0; i < btn.length; i++) {
     btn[i].onclick = function(e) {
         e.preventDefault();
-        modal = document.querySelector(e.target.getAttribute("href"));
-        modal.style.display = "block";
+        modal = document.querySelector(e.target.getAttribute('href'));
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
     }
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
     }
 }
