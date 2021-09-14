@@ -550,3 +550,8 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.modal-close {
+    padding-left: 50%;
+    padding-bottom: 3em;
+}

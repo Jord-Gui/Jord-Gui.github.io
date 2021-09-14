@@ -22,6 +22,15 @@ for (var i = 0; i < btn.length; i++) {
     }
 }
 
+// When the user clicks on (x) button, close the modal
+const exit = document.querySelectorAll('.modal-exit')
+for (var i = 0; i < exit.length; i++) {
+    exit[i].onclick = function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
